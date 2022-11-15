@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Play');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Audiowide', cursive;
+}
+
+p {
+    color: #000;
+}
+
+.panels {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel {
+    color: #fff;
+}
+
+.panel {
+    padding: 0 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    position: relative;
+}
+
+.panel .highlight {
+    font-size: 36px;
+    text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
+    transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+    position: absolute;
+    top: 40%;
+}
+
+.panel .sm-highlight {
+    display: none;
+}
+
+.panel .title {
+    flex: 3;
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.panel .details {
+    flex: 3;
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+}
+
+.panel .details .item {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.panel .details .item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.panel > * {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform .5s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+}
+
+.panel:last-of-type .details {
+    text-align: center;
+}
+
+.panel.open {
+    flex: 5;
+}
+
+.panel.open .highlight {
+    font-size: 36px;
+}
+
+.panel > *:first-child {
+    transform: translateY(-300px);
+}
+
+.panel.active > *:first-child {
+    transform: translateY(0);
+}
+
+.panel > *:last-child {
+    transform: translateY(700px);
+}
+
+.panel.active > *:last-child {
+    transform: translateY(0);
+}
+
+
+.panel.one.entertainment {
+    background: #463785 url('../css/images/the_boulevard_riyadh.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.panel.two.entertainment {
+    background: #124559 url('../css/images/worldcup.jpg');
+    background-position: center;
+    background-position-x: 60%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}
+
+
+.panel.three.entertainment {
+    background: #4A1942 url('../css/images/expodubai.jpg');
+    background-position: center;
+}
+
+
+.panel.four.entertainment {
+    background: #598392 url('../css/images/UAE1.jpeg');
+    background-position-x: 60%;
+    background-position-y: 40%;
+}
+
+
+.panel.five.entertainment {
+    background: #893168 url('../css/images/egypt1.jpeg');
+    background-position-x: 30%;
+    background-position-y: 50%;
+}
+
+@media screen and (max-width: 1080px) {
+    .panel.open .highlight {
+        font-size: 30px;
+    }
+
+    .panel .sm-highlight {
+        display: flex;
+    }
+
+    .panel .highlight.developer {
+        display: none;
+    }
+
+    .panel .highlight {
+        font-size: 18px;
+        transition: font-size .7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+    }
+
+    .panel .title,
+    .panel .details {
+        font-size: 12px;
+        transition: transform .7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+    }
+
+    .panel .details .item {
+        margin: 3px 0;
+    }
+}

@@ -1,0 +1,102 @@
+.cd-modal-action {
+    position: relative;
+}
+
+.cd-modal-action:hover .btn {
+    width: 12.5em;
+    height: 4em;
+    background-color: black;
+    border-radius: 5em;
+    transition: color 0.2s 0.3s, width 0.3s 0s;
+}
+
+.cd-modal-action .btn {
+    width: 12.5em;
+    height: 4em;
+    background-color: #ef5e4a;
+    border-radius: 5em;
+    transition: color 0.2s 0.3s, width 0.3s 0s;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.cd-modal-action .btn.to-circle {
+    width: 4em;
+    color: transparent;
+    transition: color 0.2s 0s, width 0.3s 0.2s;
+}
+
+.cd-modal-action .cd-modal-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-2em);
+    width: 4em;
+    height: 4em;
+    background-color: #ef5e4a;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s 0.5s;
+}
+
+.cd-modal-action .cd-modal-bg.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgs {
+    width: min(600px, 30vw);
+    height: min(400px, 20vw);
+}
+
+img {
+    border: solid black;
+}
+
+.no_border {
+    width: min(800px, 80vw);
+    height: min(800px, 80vw);
+    text-align: center;
+    border: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .imgs {
+        width: min(600px, 40vw);
+        height: min(400px, 26vw);
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .imgs {
+        width: min(800px, 80vw);
+        height: min(533px, 53vw);
+    }
+
+}
+
+.disappear {
+    display: none;
+}
+
+
+ul {
+    color: whitesmoke;
+}
+
+h1 {
+    color: black;
+}
+
+#credit {
+    margin-left: 20px;
+}
+
+#credit a {
+    text-decoration: underline;
+}

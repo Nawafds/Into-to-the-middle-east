@@ -1,0 +1,22 @@
+Name : Majid Isam Almuhaideb
+
+BU Username : majidmuh
+
+http://cs-people.bu.edu/majidmuh/cs103/lab1/part2/css_zen_garden.html
+
+http://cs-people.bu.edu/majidmuh/cs103/lab1/part2/index.html
+
+Added <em>,<strong>,<sup>,<hr>,<i>,<b>,<table>.
+
+I have done both Extra Points. On CSS Zen Garden I added a dotted underline under CSS Zen Garden in the header. I did this
+by adding the <abbrv> tag that contained a null abbreviation, thus leading me to create a dotted underline without any extra add-ons.
+(Note : I checked with Dr.Vahid and he mentioned that the usage of abbrv in this case should be fine and be counted towards the bonus)
+
+Bonus 2:
+
+<strong>,<b> and <em>,<i> fundemntally do the same thing. Strong and b both make characters appear bold, whereas both em and i make
+characters italic. The diffrence between them is distinction. b and i are used when you want to make something bold or italic respectively
+but for no special reason other than the asthetic change. With <strong> and <em>, however, you are distinctly saying that the text these
+tags encompass require special attention and are thus changed visually for that reason. It helps screenreaders indetify an emphasize on 
+important text, and helps one distinctly tell if something is bold/italic because it looks cool or if its bold/italic because it means
+something important.

@@ -1,0 +1,2 @@
+var x = prompt("Enter Your name");
+document.write("<p> WELCOME " + "<a style='color: #ef5e4a; text-decoration:underline'>" + x +"</a>" + " HERE YOU CAN FIND EVERYTHING <br> YOU NEED TO BEGIN YOUR JOURNEY IN THE MIDDLE EAST</p>");
